@@ -1,13 +1,12 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import HomeScreen from "./Screens/HomeScreen";
-import ResultScreen from "./Screens/ResultScreen";
-import ProfileScreen from "./Screens/ProfileScreen";
+import HomeScreen from "./Screens/HomeScreen/HomeScreen";
+import ResultScreen from "./Screens/WinScreen/ResultScreen";
+import ProfileScreen from "./Screens/ProfileScreen/ProfileScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import { StyleSheet } from "react-native";
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-import Colors from "../constants/Colors";
 
 const Tab = createBottomTabNavigator();
 
@@ -23,23 +22,22 @@ const BottomTabs = () => {
 
             if (route.name === "Home") {
               iconName = "home";
-            } else if (route.name === "Result") {
+            } else if (route.name === "Win") {
               iconName = "emoji-events";
             } else if (route.name === "Profile") {
               iconName = "manage-accounts";
             }
 
-            // You can return any component that you like here!
-            return <Icon name={iconName} size={36} color={focused ? Colors.primary : "#333"} />;
+            return <Icon name={iconName} size={36} color={focused ? "#3498db" : "#333"} />;
           },
           tabBarStyle: {
             position: "absolute",
             bottom: 5,
-            left: 5,
-            right: 5,
+            left: 10,
+            right: 10,
             backgroundColor: "#ffffff",
             borderRadius: 15,
-            height: 90,
+            height: 70,
             
             // paddingBottom: 10,
             ...styles.shadow,
@@ -50,13 +48,13 @@ const BottomTabs = () => {
             marginTop: -15,
             marginBottom: 10
           },
-          tabBarActiveTintColor: Colors.primary,
+          tabBarActiveTintColor: "#3498db",
           tabBarInactiveTintColor: "#333",
         })}
         
       >
         <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Result" component={ResultScreen} />
+        <Tab.Screen name="Win" component={ResultScreen} />
         <Tab.Screen name="Profile" component={ProfileScreen} />
       </Tab.Navigator>
     </NavigationContainer>

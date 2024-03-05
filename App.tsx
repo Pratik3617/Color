@@ -2,7 +2,6 @@ import React from 'react';
 import { SafeAreaView, StyleSheet, StatusBar } from 'react-native';
 import AppNavigator from './Components/AppNavigator';
 import 'react-native-gesture-handler';
-// import HomeContainer from './Components/HomeContainer';
 import BottomTabs from './Components/BottomTab';
 
 function App(): React.JSX.Element {
