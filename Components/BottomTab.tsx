@@ -6,6 +6,7 @@ import ProfileScreen from "./Screens/ProfileScreen/ProfileScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import { StyleSheet } from "react-native";
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import Colors from "../constants/Colors";
 
 
 const Tab = createBottomTabNavigator();
@@ -19,7 +20,6 @@ const BottomTabs = () => {
           headerShown: false,
           tabBarIcon: ({focused}) => {
             let iconName = "";
-
             if (route.name === "Home") {
               iconName = "home";
             } else if (route.name === "Win") {
@@ -27,9 +27,9 @@ const BottomTabs = () => {
             } else if (route.name === "Profile") {
               iconName = "manage-accounts";
             }
-
-            return <Icon name={iconName} size={36} color={focused ? "#3498db" : "#333"} />;
+            return <Icon name={iconName} size={36} color={focused ? Colors.primary : "#333"} />;
           },
+
           tabBarStyle: {
             position: "absolute",
             bottom: 5,
@@ -38,8 +38,6 @@ const BottomTabs = () => {
             backgroundColor: "#ffffff",
             borderRadius: 15,
             height: 70,
-            
-            // paddingBottom: 10,
             ...styles.shadow,
           },
           tabBarLabelStyle:{
@@ -48,7 +46,7 @@ const BottomTabs = () => {
             marginTop: -15,
             marginBottom: 10
           },
-          tabBarActiveTintColor: "#3498db",
+          tabBarActiveTintColor: Colors.primary,
           tabBarInactiveTintColor: "#333",
         })}
         

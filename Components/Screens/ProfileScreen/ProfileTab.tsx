@@ -17,6 +17,7 @@ const ProfileTab: React.FC<ProfileTabProps> = ({name,title,onpress}) => {
         <View style={styles.container}>
             <Icon style={styles.icon} name={name} onPress={onpress}></Icon>
             <Text style={styles.text} onPress={onpress}>{title}</Text>
+            <Icon style={styles.arrow} name="keyboard-double-arrow-right"></Icon>
         </View>
     );
 }
@@ -25,11 +26,12 @@ const styles = StyleSheet.create({
     container:{
         height: Layout.height*0.08,
         padding: 10,
-        backgroundColor: 'white',
+        backgroundColor: '#dfe9ed',
         marginVertical: 5,
         borderRadius: 5,
         flexDirection: 'row',
         alignItems: 'center',
+        elevation: 5
     },
     icon:{
         fontSize: 25,
@@ -43,10 +45,16 @@ const styles = StyleSheet.create({
         borderWidth: 2,
     },
     text:{
+        flex: 1,
         color: '#333',
         fontSize: FontSize.medium,
         letterSpacing: 1,
         fontWeight: 'bold'
+    },
+    arrow:{
+        fontSize: FontSize.large,
+        fontWeight: 'bold',
+        color: Colors.primary
     }
 })
 

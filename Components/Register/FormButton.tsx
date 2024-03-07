@@ -11,13 +11,18 @@ interface ButtonProps{
 
 const FormButton: React.FC<ButtonProps> = ({title,onPressFunction}) => {
     return (
-        <SafeAreaView style={styles.container}>
-          <TouchableOpacity style={styles.button} onPress={() => console.warn('Button pressed')}>
-            <View style={styles.basicButton}>
-              <Text style={styles.buttonText}>{title}</Text>
-            </View>
-          </TouchableOpacity>
-        </SafeAreaView>
+      <SafeAreaView style={styles.container}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={onPressFunction}
+          activeOpacity={1} 
+        >
+          <View style={styles.basicButton}>
+            <Text style={styles.buttonText}>{title}</Text>
+          </View>
+        </TouchableOpacity>
+      </SafeAreaView>
+
     );
 }
 

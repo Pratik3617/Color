@@ -1,20 +1,25 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import ProfileTab from "./ProfileTab";
+import { useAuth } from "../../../Context/AuthContext";
+import { Text } from "react-native-elements";
+import FontSize from "../../../constants/FontSize";
 
-function ProfileContent(props: { navigation: { navigate: (arg0: string) => void; }; }){
+function ProfileContent(){
+    const {logout} = useAuth();
 
-    function logout(){
-        props.navigation.navigate('Login');
+    function userLogout(){
+        logout();
     }
     return(
         <View style={styles.container}>
-            <ProfileTab name="person" title="Pratik" onpress={()=>{}}/>
-            <ProfileTab name="account-balance-wallet" title="₹1002" onpress={()=>{}}/>
-            <ProfileTab name="key" title="Change Password" onpress={()=>{}}/>
-            <ProfileTab name="account-balance" title="Add Bank Details" onpress={()=>{}}/>
-            <ProfileTab name="person" title="Account History" onpress={()=>{}}/>
-            <ProfileTab name="logout" title="Logout" onpress={()=>{}}/>
+            <Text style={styles.headText}>Account Info</Text>
+            <ProfileTab key={0} name="person" title="Pratik" onpress={()=>{}}/>
+            <ProfileTab key={1} name="account-balance-wallet" title="Wallet balance : ₹985" onpress={()=>{}}/>
+            <ProfileTab key={2} name="key" title="Change Password" onpress={()=>{}}/>
+            <ProfileTab key={3} name="account-balance" title="Add Bank Details" onpress={()=>{}}/>
+            <ProfileTab key={4} name="person" title="Account History" onpress={()=>{}}/>
+            <ProfileTab key={5} name="logout" title="Logout" onpress={userLogout}/>
         </View>
     );
 }
@@ -22,6 +27,14 @@ function ProfileContent(props: { navigation: { navigate: (arg0: string) => void;
 const styles = StyleSheet.create({
     container:{
         marginTop: 10,
+    },
+    headText:{
+        marginTop: 20,
+        fontSize: FontSize.large,
+        fontWeight: 'bold',
+        letterSpacing: 1,
+        marginBottom: 10,
+        textAlign:'center'
     }
 })
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import FontSize from '../../../constants/FontSize';
+import Colors from '../../../constants/Colors';
 
 function HomeButton(){
     const [isTextFocusedBcone, setIsTextFocusedBcone] = useState(true);
@@ -44,7 +45,7 @@ const styles = StyleSheet.create({
     },
     focusedText1:{
         borderBottomWidth : 3,
-        borderBottomColor: "#3498db"
+        borderBottomColor: Colors.primary,
     },
     game2B:{
         flex: 1,
@@ -57,7 +58,7 @@ const styles = StyleSheet.create({
     },
     focusedText2:{
         borderBottomWidth : 3,
-        borderBottomColor: "#3498db"
+        borderBottomColor: Colors.primary
     },
 })
 

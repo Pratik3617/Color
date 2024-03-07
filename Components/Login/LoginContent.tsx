@@ -4,20 +4,28 @@ import FontSize from '../../constants/FontSize';
 import Colors from '../../constants/Colors';
 import FormButton from '../Register/FormButton';
 import FloatingLabelTextInput from '../Register/Input';
-import { NativeStackScreenProps } from "@react-navigation/native-stack";
-// import { RootStackParamList } from "../types";
+import { useAuth } from '../../Context/AuthContext';
+
 
 
 function LoginContent(props: { navigation: { navigate: (arg0: string) => void; }; }){
+    const { login } = useAuth();
+
+    function userLogin(){
+        login();
+        props.navigation.navigate('Home');
+    }
+
     const navigateToRegister = () => {
         props.navigation.navigate('Register');
     };
+
     return (
         <SafeAreaView style={styles.container}>
             <FloatingLabelTextInput placeholder="Enter Email Address" iconName="email" isSecure={false}/>
             <FloatingLabelTextInput placeholder="Enter Password" iconName="lock" isSecure={true}/>  
             <Text style={styles.pwd}>Forgot Password?</Text>              
-            <FormButton title="Sign In" onPressFunction={()=>{}}/>
+            <FormButton title="Sign In" onPressFunction={userLogin}/>
 
             <View style={styles.login}>
                 <Text style={styles.text1}>Create an account?</Text>

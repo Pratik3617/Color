@@ -2,6 +2,7 @@ import React from "react";
 import { SafeAreaView, ScrollView, StyleSheet, Text, View } from "react-native";
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import FontSize from "../../../constants/FontSize";
+import Colors from "../../../constants/Colors";
 
 function GameResult(){
     return (
@@ -82,7 +83,7 @@ const styles = StyleSheet.create({
     header:{
         alignItems:'center',
         borderBottomWidth : 3,
-        borderBottomColor: '#3498db',
+        borderBottomColor: Colors.primary,
     },
     icon:{
         fontSize: 50,

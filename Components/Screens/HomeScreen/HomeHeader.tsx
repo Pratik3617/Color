@@ -4,6 +4,7 @@ import Layout from "../../../constants/Layout";
 import FontSize from "../../../constants/FontSize";
 import Font from "../../../constants/Font";
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import Colors from "../../../constants/Colors";
 
 
 function HomeHeader(){
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
         width: Layout.width * 0.94,
         padding: 15,
         borderRadius: 10,
-        backgroundColor: "#ffffff",
+        backgroundColor: "#333",
         shadowColor: "#333",
         shadowOffset:{
           width:0,
@@ -40,7 +41,7 @@ const styles = StyleSheet.create({
     headerText:{
         marginTop: 2,
         fontSize: FontSize.medium,
-        color: "#333",
+        color: "white",
         fontWeight: 'bold',
         fontFamily: Font['poppins-semiBold']
     },
@@ -51,7 +52,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     button: {
-        backgroundColor: '#3498db', 
+        backgroundColor: Colors.primary, 
         padding: 10,
         borderRadius: 5,
         alignItems: 'center',

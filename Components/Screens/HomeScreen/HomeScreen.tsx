@@ -1,5 +1,5 @@
 import React from "react";
-import { SafeAreaView } from "react-native";
+import { ImageBackground, SafeAreaView } from "react-native";
 import { StyleSheet, Text, View } from "react-native";
 import HomeHeader from "./HomeHeader";
 import HomeButton from "./HomeButton";
@@ -8,13 +8,13 @@ import Game from "./Game";
 
 function HomeScreen(){
     return(
-        <SafeAreaView style={{flex:1,backgroundColor:"#cddef9",}}>
+        <ImageBackground source={require('../../../assets/Images/background.png')}>
             <View style={styles.container}>
                 <HomeHeader/>
                 <HomeButton/>
                 <Game/>
             </View>
-        </SafeAreaView>
+        </ImageBackground>
     )
 }
 
