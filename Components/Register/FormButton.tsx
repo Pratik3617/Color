@@ -1,6 +1,5 @@
 import React from "react";
 import { TouchableOpacity, Text, View, StyleSheet, SafeAreaView,Platform } from 'react-native';
-import Font from "../../constants/Font";
 import FontSize from "../../constants/FontSize";
 import Colors from "../../constants/Colors";
 
@@ -35,11 +34,10 @@ const styles = StyleSheet.create({
       borderRadius: 5,
     },
     buttonText: {
-      fontFamily: Font['poppins-bold'],
+      fontFamily: "Montserrat-Bold",
       color: '#fff',
       textAlign:'center',
       fontSize: FontSize.large,
-      fontWeight: 'bold',
       letterSpacing: 1.5
     },
     button: {

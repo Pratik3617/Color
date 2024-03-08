@@ -1,6 +1,5 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import { Tile } from "react-native-elements";
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import Colors from "../../../constants/Colors";
 import FontSize from "../../../constants/FontSize";
@@ -10,7 +9,7 @@ interface ProfileTabProps {
     name: string;
     title: string;
     onpress: () => void;
-  }
+}
 
 const ProfileTab: React.FC<ProfileTabProps> = ({name,title,onpress}) => {
     return (
@@ -31,7 +30,9 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         flexDirection: 'row',
         alignItems: 'center',
-        elevation: 5
+        elevation: 5,
+        borderWidth: 1,
+        borderColor: '#333'
     },
     icon:{
         fontSize: 25,
@@ -48,8 +49,7 @@ const styles = StyleSheet.create({
         flex: 1,
         color: '#333',
         fontSize: FontSize.medium,
-        letterSpacing: 1,
-        fontWeight: 'bold'
+        fontFamily: 'Montserrat-Bold'
     },
     arrow:{
         fontSize: FontSize.large,

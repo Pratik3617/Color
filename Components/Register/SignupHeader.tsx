@@ -3,7 +3,7 @@ import { SafeAreaView, StyleSheet, Text, View } from 'react-native'
 import FontSize from '../../constants/FontSize';
 import Colors from '../../constants/Colors';
 import Spacing from '../../constants/Spacing';
-import Font from '../../constants/Font';
+
 
 export class SignupHeader extends Component {
   render() {
@@ -22,12 +22,11 @@ const styles = StyleSheet.create({
     header:{
         marginTop: 20,
         alignItems:"center",
-        fontFamily: Font['poppins-bold']
     },
     headerText:{
         fontSize: FontSize.xxLarge,
         color: Colors.primary,
-        fontWeight: 'bold',
+        fontFamily: 'Montserrat-Bold',
     },
     subText:{
         fontSize:FontSize.large,
@@ -36,6 +35,7 @@ const styles = StyleSheet.create({
         marginTop: Spacing*1.5,
         color: 'black',
         fontWeight: '600',
+        fontFamily: 'Montserrat-Bold',
         marginBottom: Spacing*2
     }
 });

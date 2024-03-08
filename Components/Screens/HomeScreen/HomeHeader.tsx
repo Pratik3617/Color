@@ -2,7 +2,6 @@ import React from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import Layout from "../../../constants/Layout";
 import FontSize from "../../../constants/FontSize";
-import Font from "../../../constants/Font";
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import Colors from "../../../constants/Colors";
 
@@ -42,8 +41,7 @@ const styles = StyleSheet.create({
         marginTop: 2,
         fontSize: FontSize.medium,
         color: "white",
-        fontWeight: 'bold',
-        fontFamily: Font['poppins-semiBold']
+        fontFamily: "Montserrat-Regular"
     },
     bottom:{
         display: 'flex',
@@ -62,11 +60,11 @@ const styles = StyleSheet.create({
         buttonText: {
         color: '#fff', 
         fontSize: 16,
-        fontWeight:'bold',
+        fontFamily: "Montserrat-Bold",
         letterSpacing: 1
     },
     icon:{
-        color: "green",
+        color: "#39fc03",
         marginTop: 10
     }
 })

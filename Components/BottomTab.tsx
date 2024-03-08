@@ -42,7 +42,7 @@ const BottomTabs = () => {
           },
           tabBarLabelStyle:{
             fontSize: 13,
-            fontWeight: 'bold',
+            fontFamily: 'Montserrat-Bold',
             marginTop: -15,
             marginBottom: 10
           },

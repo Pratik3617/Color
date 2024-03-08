@@ -103,6 +103,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         color: "#333",
         fontSize: FontSize.medium,
+        fontFamily: "Montserrat-Regular",
     },
     result:{
         marginTop : 10,
@@ -132,6 +133,7 @@ const styles = StyleSheet.create({
         color: '#333',
         fontSize: FontSize.medium,
         marginLeft: 10,
+        fontFamily: "Montserrat-Regular",
     },
     scrollContainer: {
         flexGrow: 1,

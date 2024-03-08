@@ -14,6 +14,16 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-AwesomeProject-AwesomeProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-AwesomeProject-AwesomeProjectTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		A56F7194D6C344998662E98F /* InriaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96A26DE6D9714DA3B8242A96 /* InriaSans-Bold.ttf */; };
+		E7D2EF637059432A86FD6C0A /* InriaSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3854207546EE4B3D9A6A2793 /* InriaSans-Light.ttf */; };
+		D8E769594138409BAE0BEEFE /* InriaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E351FDEFE136491B881A9CBD /* InriaSans-Regular.ttf */; };
+		2195B23862ED412C81A6E738 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14FF02B5F73046138CFD2493 /* Montserrat-Bold.ttf */; };
+		4F8E854C5A2544889E6AF88A /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BCD86AA16C4595B3E775F6 /* Montserrat-Regular.ttf */; };
+		E7058B1789064FDFA27B1DB9 /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DB880847E1249E98666F13B /* Montserrat-VariableFont_wght.ttf */; };
+		F54D5FA5DFAA40C5B617DCCB /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF31E0C9E4D34D538DAD292D /* Poppins-Light.ttf */; };
+		E2DCC77BCF6A4F06AC348E9A /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02B7003D2F5B4B4EAE7B572A /* Poppins-Medium.ttf */; };
+		98127D59B3AB491E976FDEEC /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD981E87854642C484059FCF /* Poppins-Regular.ttf */; };
+		707C9A52FAD6468A932D2B0C /* NanumGothicCoding-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B935C224699C49DDB1960D48 /* NanumGothicCoding-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +54,16 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AwesomeProject/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-AwesomeProject-AwesomeProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProject-AwesomeProjectTests.release.xcconfig"; path = "Target Support Files/Pods-AwesomeProject-AwesomeProjectTests/Pods-AwesomeProject-AwesomeProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		96A26DE6D9714DA3B8242A96 /* InriaSans-Bold.ttf */ = {isa = PBXFileReference; name = "InriaSans-Bold.ttf"; path = "../assets/fonts/InriaSans-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3854207546EE4B3D9A6A2793 /* InriaSans-Light.ttf */ = {isa = PBXFileReference; name = "InriaSans-Light.ttf"; path = "../assets/fonts/InriaSans-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E351FDEFE136491B881A9CBD /* InriaSans-Regular.ttf */ = {isa = PBXFileReference; name = "InriaSans-Regular.ttf"; path = "../assets/fonts/InriaSans-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		14FF02B5F73046138CFD2493 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; name = "Montserrat-Bold.ttf"; path = "../assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C4BCD86AA16C4595B3E775F6 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; name = "Montserrat-Regular.ttf"; path = "../assets/fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6DB880847E1249E98666F13B /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; name = "Montserrat-VariableFont_wght.ttf"; path = "../assets/fonts/Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AF31E0C9E4D34D538DAD292D /* Poppins-Light.ttf */ = {isa = PBXFileReference; name = "Poppins-Light.ttf"; path = "../assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		02B7003D2F5B4B4EAE7B572A /* Poppins-Medium.ttf */ = {isa = PBXFileReference; name = "Poppins-Medium.ttf"; path = "../assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FD981E87854642C484059FCF /* Poppins-Regular.ttf */ = {isa = PBXFileReference; name = "Poppins-Regular.ttf"; path = "../assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B935C224699C49DDB1960D48 /* NanumGothicCoding-Bold.ttf */ = {isa = PBXFileReference; name = "NanumGothicCoding-Bold.ttf"; path = "../assets/fonts/NanumGothicCoding-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +142,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				0D6F5338CB3846569F0A57EA /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +168,24 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		0D6F5338CB3846569F0A57EA /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				96A26DE6D9714DA3B8242A96 /* InriaSans-Bold.ttf */,
+				3854207546EE4B3D9A6A2793 /* InriaSans-Light.ttf */,
+				E351FDEFE136491B881A9CBD /* InriaSans-Regular.ttf */,
+				14FF02B5F73046138CFD2493 /* Montserrat-Bold.ttf */,
+				C4BCD86AA16C4595B3E775F6 /* Montserrat-Regular.ttf */,
+				6DB880847E1249E98666F13B /* Montserrat-VariableFont_wght.ttf */,
+				AF31E0C9E4D34D538DAD292D /* Poppins-Light.ttf */,
+				02B7003D2F5B4B4EAE7B572A /* Poppins-Medium.ttf */,
+				FD981E87854642C484059FCF /* Poppins-Regular.ttf */,
+				B935C224699C49DDB1960D48 /* NanumGothicCoding-Bold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -243,6 +282,16 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				A56F7194D6C344998662E98F /* InriaSans-Bold.ttf in Resources */,
+				E7D2EF637059432A86FD6C0A /* InriaSans-Light.ttf in Resources */,
+				D8E769594138409BAE0BEEFE /* InriaSans-Regular.ttf in Resources */,
+				2195B23862ED412C81A6E738 /* Montserrat-Bold.ttf in Resources */,
+				4F8E854C5A2544889E6AF88A /* Montserrat-Regular.ttf in Resources */,
+				E7058B1789064FDFA27B1DB9 /* Montserrat-VariableFont_wght.ttf in Resources */,
+				F54D5FA5DFAA40C5B617DCCB /* Poppins-Light.ttf in Resources */,
+				E2DCC77BCF6A4F06AC348E9A /* Poppins-Medium.ttf in Resources */,
+				98127D59B3AB491E976FDEEC /* Poppins-Regular.ttf in Resources */,
+				707C9A52FAD6468A932D2B0C /* NanumGothicCoding-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

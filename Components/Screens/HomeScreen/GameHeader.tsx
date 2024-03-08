@@ -32,7 +32,8 @@ const styles = StyleSheet.create({
     },
     text:{
         color: "#333",
-        letterSpacing: 1
+        letterSpacing: 1,
+        fontFamily: "Montserrat-Regular",
     },
     box:{
         flex:1,
@@ -53,7 +54,7 @@ const styles = StyleSheet.create({
         marginTop: 5,
         fontSize: FontSize.large,
         color: "#333",
-        fontWeight: "bold"
+        fontFamily: "Montserrat-Bold",
     }
 })
 

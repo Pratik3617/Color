@@ -75,6 +75,7 @@ const styles = StyleSheet.create({
     colorText:{
         color: "#fff",
         letterSpacing:1,
+        fontFamily: "Montserrat-Bold",
     },
     violet:{
         backgroundColor: "purple",
@@ -103,7 +104,7 @@ const styles = StyleSheet.create({
     },
     NumberText:{
         color:"#ffffff",
-        fontWeight: 'bold',
+        fontFamily: "Montserrat-Bold",
         fontSize: FontSize.medium
     }
 })

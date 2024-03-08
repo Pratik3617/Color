@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
         textAlign: "center",
         paddingBottom: 5,
         color:"#333",
-        fontWeight:'bold',
+        fontFamily: "Montserrat-Bold",
         fontSize: FontSize.medium,
         letterSpacing:1
     },
@@ -47,19 +47,19 @@ const styles = StyleSheet.create({
         borderBottomWidth : 3,
         borderBottomColor: Colors.primary,
     },
-    game2B:{
-        flex: 1,
-        textAlign: "center",
-        paddingBottom: 5,
-        color:"#333",
-        fontWeight:'bold',
-        fontSize: FontSize.medium,
-        letterSpacing:1
-    },
-    focusedText2:{
-        borderBottomWidth : 3,
-        borderBottomColor: Colors.primary
-    },
+    // game2B:{
+    //     flex: 1,
+    //     textAlign: "center",
+    //     paddingBottom: 5,
+    //     color:"#333",
+    //     fontWeight:'bold',
+    //     fontSize: FontSize.medium,
+    //     letterSpacing:1
+    // },
+    // focusedText2:{
+    //     borderBottomWidth : 3,
+    //     borderBottomColor: Colors.primary
+    // },
 })
 
 export default HomeButton;

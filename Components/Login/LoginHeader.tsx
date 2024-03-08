@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Text, View, StyleSheet, SafeAreaView} from 'react-native'
-import Font from '../../constants/Font';
 import FontSize from '../../constants/FontSize';
 import Colors from '../../constants/Colors';
 import Spacing from '../../constants/Spacing';
@@ -22,20 +21,19 @@ const styles = StyleSheet.create({
     header:{
         marginTop: 20,
         alignItems:"center",
-        fontFamily: Font['poppins-bold']
     },
     headerText:{
         fontSize: FontSize.xxLarge,
         color: Colors.primary,
-        fontWeight: 'bold',
+        fontFamily: 'Montserrat-Bold',
     },
     subText:{
         fontSize:FontSize.large,
         textAlign: "center",
         width: "80%",
-        marginTop: Spacing*1.5,
         color: 'black',
-        fontWeight: '600',
+        fontFamily: 'Montserrat-Regular',
+        marginTop: Spacing*1.5,
         marginBottom: Spacing*2
     }
 });
